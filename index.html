@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan Reolon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 700px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    a {
+      color: #7ce0f9;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      color: #ffffff;
+    }
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 1em;
+      border: 3px solid #7ce0f9;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      background-color: #7ce0f9;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s ease-in-out;
+    }
+    button:hover {
+      background-color: #5cc8e0;
+    }
+    
+    .avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1em;
+  border: 3px solid #7ce0f9;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="https://i.postimg.cc/9FCvN60N/56029100-053c-49c2-bc9a-0cbbf5b970dd.jpg" alt="Avatar d'Ethan" />
+    <h1>Ethan Reolon</h1>
+    <p>Créatif et curieux. Passionné par la tech, les maths et les échecs.</p>
+    <p>
+      <a href="https://github.com/ethanreolon">GitHub</a>
+    </p>
+
+    <form action="https://formspree.io/f/mldjkjgl" method="POST">
+      <h2>Contacte-moi</h2>
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</body>
+</html>
